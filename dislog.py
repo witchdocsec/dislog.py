@@ -8,6 +8,8 @@ class DislogClient(discord.Client):
 	async def on_message_delete(self,message):
 		print("message deleted")
 		print(f"{message.author}-({message.channel}):{message.content}")
+		if len(sys.argv) >= 4:
+			if sys.argv[3]=="roast":
 		await message.channel.send(f"message deleted by{message.author}-({message.channel}):`{message.content}` :skull: isn't this message cringe?")
 	if len(sys.argv) >= 3:
 		if sys.argv[2]=="all":
