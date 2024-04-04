@@ -1,5 +1,6 @@
 import discord
 import sys
+import random
 class DislogClient(discord.Client):
 	async def on_ready(self):
 		print(f'Online as {self.user}')
@@ -7,10 +8,12 @@ class DislogClient(discord.Client):
 	async def on_message_delete(self,message):
 		print("message deleted")
 		print(f"{message.author}-({message.channel}):{message.content}")
-	if sys.argv[2]=="all":
-		async def on_message(self,message):
-			print("message created")
-			print(f"{message.author}-({message.channel}):{message.content}")
+		await message.channel.send(f"message deleted by{message.author}-({message.channel}):`{message.content}` :skull: isn't this message cringe?")
+	if len(sys.argv) >= 3:
+		if sys.argv[2]=="all":
+			async def on_message(self,message):
+				print("message created")
+				print(f"{message.author}-({message.channel}):{message.content}")
 
 intents = discord.Intents.default()
 intents.message_content = True
