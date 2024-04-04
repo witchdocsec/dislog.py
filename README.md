@@ -5,4 +5,5 @@ a bot that logs discord messages on a server. deleted or all
 # useage
 "$py(thon3) dislog.py token" - only show deleted  
 "$py(thon3) dislog.py token all" - only show deleted
-![image](https://github.com/witchdocsec/dislog.py/assets/107813117/543fea57-b827-4ef3-b93e-6c4a6e87c7e4)
+![image](https://github.com/witchdocsec/dislog.py/assets/107813117/1e5b76e8-28dd-4b1c-9739-36ebd06bc641)
+
