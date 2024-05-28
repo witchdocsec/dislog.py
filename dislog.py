@@ -10,7 +10,8 @@ class DislogClient(discord.Client):
 		print(f"{message.author}-({message.channel}):{message.content}")
 		if len(sys.argv) >= 4:
 			if sys.argv[3]=="roast":
-				await message.channel.send(f"message deleted by{message.author}-({message.channel}):`{message.content.replace("`","'")}` :skull: isn't this message cringe?")
+				message.content=message.content.replace("`","'")
+				await message.channel.send(f"message deleted by{message.author}-({message.channel}):`{message.content}` :skull: isn't this message cringe?")
 	if len(sys.argv) >= 3:
 		if sys.argv[2]=="all":
 			async def on_message(self,message):
