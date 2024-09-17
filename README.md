@@ -1,5 +1,5 @@
 # dislog.py
-you probably shouldn't log deleted discord messages I wrote cos I was bored  
+you probably shouldn't log deleted discord messages I wrote this cos I was bored  
 a bot that logs discord messages on a server. deleted or all
 
 # useage
